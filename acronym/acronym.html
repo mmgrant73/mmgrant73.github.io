@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Acronym Web Component</title>
+    <script>
+        function acronymclick(){
+            alert("click event has been triggered!!");
+        }
+    </script>
+  </head>
+  
+  <body>
+  
+    <h2>This is a demostration of the Acronym web component: (Horizontal and Vertical)</h2>
+
+    <div>
+    <x-acronym type="horizontal" onclick="acronymclick()" innerstyle="font-size: 2em; box-shadow: 6px 6px 3px grey; text-shadow: 0 0 3px #FF0000; background-color: Beige; border-radius: 15px; border: 3px solid black;">
+        National Aeronautics Space Administration
+    </x-acronym>
+    </div> 
+
+    <div style="margin: auto; width: 400px;">
+    <x-acronym type="vertical" onclick="acronymclick()" innerstyle="font-size: 16px; box-shadow: 6px 6px 3px grey; text-shadow: 0 0 3px #FF0000; background-color: Beige; border-radius: 15px; border: 3px solid black;">
+        World Wildlife Fund
+    </x-acronym>
+    </div>
+
+    <script src="./acronym.js"></script>
+
+  </body>
+  
+</html>
