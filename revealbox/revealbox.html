@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>Reveal Box Web Component</title>
+        <script>
+            function revealclick(){
+                alert("The revealbox has been clicked");
+            }
+        </script>
+      </head>
+      
+      <body>
+      
+        <h1 style="padding: 10px, 0px, 0px, 25px; margin: 20px">This is the RevealBox web component:</h1>
+        
+        <div style="width: 100%; padding: 25px 100px 25px 100px; margin: 10px;">
+        
+            <reveal-box effect="flip-hort" width="100px" height="50px" onclick="revealclick()">
+                <div slot="cover" style="background-color: Beige; border: 3px solid black;"> <!-- width: 150px; height: 100px;" > -->
+                    <p style="text-align: center">flip-hort</p>
+                </div>
+                <div slot="reveal" style="background-color: black; color: white; border: 3px solid red;"> 
+                    <p style="text-align: center">Reveal</p>
+                </div>
+            </reveal-box>
+            
+            <reveal-box effect="flip-vert" width="100px" height="50px" onclick="revealclick()">
+                <div slot="cover" style="background-color: Beige; border: 3px solid black;"> <!-- width: 150px; height: 100px;" > -->
+                    <p style="text-align: center">flip-vert</p>
+                </div>
+                <div slot="reveal" style="background-color: black; color: white; border: 3px solid red;"> 
+                    <p style="text-align: center">Reveal</p>
+                </div>
+            </reveal-box>
+            
+            <reveal-box effect="slide-left" width="100px" height="50px" onclick="revealclick()">
+                <div slot="cover" style="background-color: Beige; border: 3px solid black;"> <!-- width: 150px; height: 100px;" > -->
+                    <p style="text-align: center">slide-left</p>
+                </div>
+                <div slot="reveal" style="background-color: black; color: white; border: 3px solid red;"> 
+                    <p style="text-align: center">Reveal</p>
+                </div>
+            </reveal-box>
+            
+            <reveal-box effect="slide-right" width="100px" height="50px" onclick="revealclick()">
+                <div slot="cover" style="background-color: Beige; border: 3px solid black;"> <!-- width: 150px; height: 100px;" > -->
+                    <p style="text-align: center">slide-right</p>
+                </div>
+                <div slot="reveal" style="background-color: black; color: white; border: 3px solid red;"> 
+                    <p style="text-align: center">Reveal</p>
+                </div>
+            </reveal-box>
+            
+            <reveal-box effect="rotate" width="100px" height="50px" onclick="revealclick()">
+                <div slot="cover" style="background-color: Beige; border: 3px solid black;"> <!-- width: 150px; height: 100px;" > -->
+                    <p style="text-align: center">rotate</p>
+                </div>
+                <div slot="reveal" style="background-color: black; color: white; border: 3px solid red;"> 
+                    <p style="text-align: center">Reveal</p>
+                </div>
+            </reveal-box>
+        
+        </div>
+        
+        <div style="width: 90%; padding: 100px; margin: 10px;">
+        
+            <reveal-box effect="fade" width="100px" height="50px" onclick="revealclick()">
+                <div slot="cover" style="background-color: Beige; border: 3px solid black;"> <!-- width: 150px; height: 100px;" > -->
+                    <p style="text-align: center">fade</p>
+                </div>
+                <div slot="reveal" style="background-color: black; color: white; border: 3px solid red;"> 
+                    <p style="text-align: center">Reveal</p>
+                </div>
+            </reveal-box>
+            
+            <reveal-box effect="shrink" width="100px" height="50px" onclick="revealclick()">
+                <div slot="cover" style="background-color: Beige; border: 3px solid black;"> <!-- width: 150px; height: 100px;" > -->
+                    <p style="text-align: center">shrink</p>
+                </div>
+                <div slot="reveal" style="background-color: black; color: white; border: 3px solid red;"> 
+                    <p style="text-align: center">Reveal</p>
+                </div>
+            </reveal-box>
+            
+            <reveal-box effect="sweep-hort" width="100px" height="50px" onclick="revealclick()">
+                <div slot="cover" style="background-color: Beige; border: 3px solid black;"> <!-- width: 150px; height: 100px;" > -->
+                    <p style="text-align: center">sweep-hort</p>
+                </div>
+                <div slot="reveal" style="background-color: black; color: white; border: 3px solid red;"> 
+                    <p style="text-align: center">Reveal</p>
+                </div>
+            </reveal-box>
+            
+            <reveal-box effect="sweep-vert" width="100px" height="50px" onclick="revealclick()">
+                <div slot="cover" style="background-color: Beige; border: 3px solid black;"> <!-- width: 150px; height: 100px;" > -->
+                    <p style="text-align: center">sweep-vert</p>
+                </div>
+                <div slot="reveal" style="background-color: black; color: white; border: 3px solid red;"> 
+                    <p style="text-align: center">Reveal</p>
+                </div>
+            </reveal-box>
+        
+        </div>
+
+        <script src="./revealbox.js"></script>
+
+      </body>
+      
+    </html>
